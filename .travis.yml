@@ -1,0 +1,11 @@
+deploy:
+    provider: s3
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: diegorocha.com.br
+    endpoint: diegorocha.com.br.s3-website-sa-east-1.amazonaws.com
+    region: sa-east-1
+    skip_cleanup: true
+    acl: public_read
+    detect_encoding: true
+    cache_control: "max-age=604800,public"
